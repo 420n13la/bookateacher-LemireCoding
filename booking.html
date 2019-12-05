@@ -5,32 +5,191 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css">
 
 <style>
-/* STYLE GOES HERE IF NEEDED */
+.jumbotron{
+    background: orange !important;
+}
 
+.jumbotron h1{
+  font-family: 'Staatliches', cursive;
+  font-size: 4em;
+
+}
 </style>
 
 </head>
 <body>
-
-  <h1>Book a Teacher</h1>
+  
+   <div class="jumbotron text-center text-white">
+  <h1 >Book a Teacher</h1>
   <p>User Experience Web Interface Design</p> 
-  
-  <nav>
-  <!-- NAVIGATION GOES HERE -->
-  
-  </nav>
-
+  </div>
   <div class="container">
-  <!-- FORM GOES HERE -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav-tabs" style="margin-top: 0px;">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Teachers</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="booking.html">Booking</a>
+      </li>
+      <li class="nav-item disable">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+</div>
+
+
+  <div class="container font-weight-bold d-md-block d-sm-none">
+  <form>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col">
+      <label for="name">Name</label>
+      <input type="text" id="name" class="form-control" placeholder="First name">
+    </div>
+
+    <div class="col">
+      <label for="level">Level</label>
+       <select name="Level" id="level">
+          <option value="volvo">Beginner</option>
+          <option value="saab">Intermediate</option>
+          <option value="fiat">Advanced</option>
+       </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label>E-Mail</label>
+      <input type="text" class="form-control" placeholder="..@gmail.com" required>
+    </div>
+    <div class="col">
+      <label for="radio">Time</label><br>
+      <input type="radio" id="radio" name="gender" value="day" checked> Day<br>
+<input type="radio" id="radio" name="gender" value="Night"> Night<br>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col">
+      <label>Phone</label>
+      <input type="text" class="form-control" placeholder="123-123-4444">
+    </div>
+    <div class="col">
+      <label for="date" style="margin-top: 2%;">Date</label>
+      <input type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label>Topics To Discuss</label><br>
+      <textarea style="width: 100%;"></textarea>
+    </div>
+    <div class="col">
+      <label for="check">Invite Teachers</label><br>
+      <input type="checkbox" id="check" name="gender" value="ali" checked> Alicia<br>
+      <input type="checkbox" id="check" name="gender" value="reza" checked> Reza<br>
+      <input type="checkbox" id="check" name="gender" value="jen" checked> Jennifer<br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <input class="btn btn-primary" type="submit" value="Book">
+      <input class="btn btn-primary" type="reset" value="Clear">
+    </div>
+  </div>
+</form>
 
   </div>
   
-<footer>
-    <div>Made with Love in Saint-Lambert</div>
-</footer>  
 
+
+
+
+
+
+
+  <div class="container font-weight-bold d-sm-block d-md-none">
+  <form>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col">
+      <label for="name">Name</label>
+      <input type="text" id="name" class="form-control" placeholder="First name">
+    </div>
+
+    
+      <label for="level">Level</label>
+       <select name="Level" id="level">
+          <option value="volvo">Beginner</option>
+          <option value="saab">Intermediate</option>
+          <option value="fiat">Advanced</option>
+       </select>
+    
+  </div>
+
+  <div class="row">
+    
+      <label>E-Mail</label>
+      <input type="text" class="form-control" placeholder="..@gmail.com" required>
+    
+    
+      <label for="radio">Time</label><br>
+      <input type="radio" id="radio" name="gender" value="day" checked> Day<br>
+<input type="radio" id="radio" name="gender" value="Night"> Night<br>
+    
+  </div>
+  
+  <div class="row">
+    
+      <label>Phone</label>
+      <input type="text" class="form-control" placeholder="123-123-4444">
+    
+    
+      <label for="date" style="margin-top: 2%;">Date</label>
+      <input type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
+   </div>
+
+  <div class="row">
+    
+      <label>Topics To Discuss</label><br>
+      <textarea style="width: 100%;"></textarea>
+    </div>
+    <div class="row">
+      <label for="check">Invite Teachers</label><br>
+      <input type="checkbox" id="check" name="gender" value="ali" checked> Alicia<br>
+      <input type="checkbox" id="check" name="gender" value="reza" checked> Reza<br>
+      <input type="checkbox" id="check" name="gender" value="jen" checked> Jennifer<br>
+    </div>
+  
+  <div class="row">
+    
+      <input class="btn btn-primary" type="submit" value="Book">
+      <input class="btn btn-primary" type="reset" value="Clear">
+    </div>
+  
+</form>
+
+  </div>
+
+  </div> 
+  <div class="container-fluid bg-dark text-white text-center">
+    <div class="container">
+  <footer style="height: 80px;">
+    <div style="margin-top: 60px;padding-top: 35px;">Made with Love in Saint-Lambert</div>
+  </footer> 
+</div>
 </body>
 </html>
+
